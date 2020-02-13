@@ -3,9 +3,10 @@
 
 class ponto
 {
+    
 private:
     
-    double ponto_x, ponto_y;
+    double valor_x, valor_y;
     
 protected:
     
@@ -16,9 +17,11 @@ public:
 
     ponto();
     ~ponto();
-    void definir_pontos(double,double);
     double get_x();
     double get_y();
+    void definir_pontos();
+    void definir_pontos(double x,double y);
+
 };
 
 #endif
