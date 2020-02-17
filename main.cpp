@@ -1,20 +1,16 @@
-#include "ponto.h"
+#include "triangulo.h"
 #include <iostream>
-#include
+#include <graphics.h>
+#include <conio.h>
 
 using namespace std;
 
 int main (void)
 {
     
-
-    ponto teste;
-    teste.definir_pontos();
-    
-    cout << teste.get_x() << endl << teste.get_y() << endl;
+    triangulo qualquer;
+    qualquer.imprimir_pontos();
 
     system("PAUSE");
-    
-    
     return 0;
 }
