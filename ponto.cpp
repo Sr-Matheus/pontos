@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <time.h>
-#include <graphics.h>
 #include "ponto.h"
 
 ponto::ponto()
@@ -56,10 +55,32 @@ void ponto::imprimir_valores()
 
 ponto ponto::operator+ (ponto a)
 {
-    ponto c;
-    c.valor_x = valor_x + a.valor_x;
-    c.valor_y = valor_y + a.valor_y;
-    return c;
+    ponto b;
+    
+    b.valor_x = valor_x + a.valor_x;
+    b.valor_y = valor_y + a.valor_y;
+
+    return b;
+}
+
+ponto ponto::operator-(ponto a)
+{
+    ponto b;
+    
+    b.valor_x = valor_x - a.valor_x;
+    b.valor_y = valor_x - b.valor_y;
+
+    return b;
+}
+
+ponto ponto::operator* (ponto a)
+{
+    ponto b;
+    
+    b.valor_x = valor_x * a.valor_x;
+    b.valor_y = valor_y * a.valor_y;
+
+    return b;
 }
 
 bool ponto::operator==(ponto a)
