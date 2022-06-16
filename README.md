@@ -1,4 +1,5 @@
-# pontos
+# Pontos
+
 Estudo de primitivas gráficas usando implementação em c++
 
 Nesse projeto é utilizado os seguintes arquivos:
